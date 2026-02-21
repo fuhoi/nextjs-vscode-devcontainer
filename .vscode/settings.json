@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "'FiraCode Nerd Font', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.inertialScroll": true,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "none",
+    "editor.smoothScrolling": true,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "GitHub Light Default",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "Default",
+    "workbench.tree.enableStickyScroll": true,
+}

@@ -1,0 +1,25 @@
+# REF: https://mise.jdx.dev/mise-cookbook/nodejs.html#example-with-pnpm
+
+[hooks]
+enter = "echo 'I entered the project'"
+leave = "echo 'I left the project'"
+preinstall = "echo 'I am about to install tools'"
+postinstall = [
+    "echo 'I just installed tools'",
+    "echo 'Installed: $MISE_INSTALLED_TOOLS'",
+]
+
+[tools]
+node = { version = "24", postinstall = "npm install --global pnpm" }
+
+[env]
+_.path = ['{{config_root}}/node_modules/.bin']
+
+[tasks.install]
+description = "Install dependencies"
+run = "pnpm install"
+
+[tasks.start]
+description = "Start the development server"
+depends = "install"
+run = "pnpm dev"

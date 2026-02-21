@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+    "name": "Debian",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/base:trixie",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "cSpell.language": "en,en-AU"
+            },
+            "extensions": [
+                // VS Code
+                "GitHub.github-vscode-theme" /* GitHub Theme: A collection of themes based on GitHub's color palette. */,
+                "ccssmnn.monochrome-tailwind-colors" /* Monochrome Tailwind Colors: A monochrome color theme for Tailwind CSS. */,
+                "PKief.material-icon-theme" /* Material Icon Theme: A popular icon theme for Visual Studio Code that provides a wide range of icons for files, folders, and various programming languages. */,
+                "streetsidesoftware.code-spell-checker-australian-english" /* Code Spell Checker - Australian English: A spell checker extension for Visual Studio Code that provides support for Australian English. It helps identify and correct spelling errors in your code, comments, and documentation. */,
+                "streetsidesoftware.code-spell-checker" /* Code Spell Checker: A spell checker extension for Visual Studio Code that helps identify and correct spelling errors in your code, comments, and documentation. It supports multiple languages and can be customized to fit your needs. */,
+                "mutantdino.resourcemonitor" /* Resource Monitor: A Visual Studio Code extension that provides real-time monitoring of system resources such as CPU, memory, and disk usage. It helps developers keep track of their system's performance while coding. */,
+                // AI Agents
+                "GitHub.copilot-chat" /* GitHub Copilot Chat: GitHub Copilot is an AI peer programming tool that helps you write code faster and smarter. */,
+                // File types
+                "tamasfe.even-better-toml" /* Even Better TOML: A Visual Studio Code extension that provides enhanced support for TOML files, including syntax highlighting, validation, and autocompletion. It helps developers work with TOML configuration files more efficiently. */,
+                // Data
+                "ms-toolsai.datawrangler" /* Data Wrangler: Data Wrangler is an AI-powered extension for Visual Studio Code that helps you clean, transform, and visualize your data. It provides a user-friendly interface for performing common data manipulation tasks, making it easier to work with your data directly within the code editor. */,
+                // Code Editing
+                "EditorConfig.EditorConfig" /* EditorConfig for VS Code: EditorConfig helps maintain consistent coding styles between different editors and IDEs. It allows you to define and enforce coding styles in a project by using a .editorconfig file. */,
+                // Web Development
+                "bradlc.vscode-tailwindcss"
+            ]
+        }
+    },
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    "remoteUser": "root"
+}
