@@ -1,18 +1,109 @@
 {
+    "breadcrumbs.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line-thin",
+    "editor.detectIndentation": true,
+    "editor.foldingHighlight": false,
     "editor.fontFamily": "'FiraCode Nerd Font', monospace",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
+    "editor.guides.indentation": false,
+    "editor.hideCursorInOverviewRuler": true,
     "editor.inertialScroll": true,
     "editor.insertSpaces": true,
+    "editor.lineNumbers": "off",
+    "editor.matchBrackets": "never",
+    "editor.minimap.autohide": "mouseover",
+    "editor.occurrencesHighlight": "off",
+    "editor.renderControlCharacters": false,
+    "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "none",
+    "editor.scrollbar.horizontalScrollbarSize": 6,
+    "editor.scrollbar.verticalScrollbarSize": 6,
+    "editor.selectionHighlight": false,
     "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": false,
     "editor.tabSize": 4,
     "files.insertFinalNewline": true,
     "git.autofetch": true,
     "git.confirmSync": false,
+    "git.decorations.enabled": true,
+    "scm.diffDecorationsGutterVisibility": "hover",
+    "settings.cycle": [
+        {
+            "id": "colorThemeGitHub",
+            "overrideWorkspaceSettings": true,
+            "values": [
+                {
+                    "workbench.colorTheme": "GitHub Light Default",
+                    "workbench.iconTheme": "material-icon-theme",
+                    "workbench.tree.renderIndentGuides": "always"
+                },
+                {
+                    "workbench.colorTheme": "GitHub Dark Default",
+                    "workbench.iconTheme": "material-icon-theme",
+                    "workbench.tree.renderIndentGuides": "always"
+                }
+            ]
+        },
+        {
+            "id": "colorThemeMonochrome",
+            "overrideWorkspaceSettings": true,
+            "values": [
+                {
+                    "workbench.colorTheme": "Monochrome Stone Light",
+                    "workbench.iconTheme": null,
+                    "workbench.tree.renderIndentGuides": "none"
+                },
+                {
+                    "workbench.colorTheme": "Monochrome Stone Dark",
+                    "workbench.iconTheme": null,
+                    "workbench.tree.renderIndentGuides": "none"
+                }
+            ]
+        },
+        {
+            "id": "superClean",
+            "overrideWorkspaceSettings": true,
+            "values": [
+                {
+                    "breadcrumbs.enabled": false,
+                    "editor.bracketPairColorization.enabled": false,
+                    "editor.foldingHighlight": false,
+                    "editor.guides.indentation": false,
+                    "editor.lineNumbers": "off",
+                    "editor.minimap.autohide": "mouseover",
+                    "editor.renderControlCharacters": false,
+                    "editor.renderIndentGuides": false,
+                    "editor.renderWhitespace": "none",
+                    "editor.scrollbar.horizontalScrollbarSize": 6,
+                    "editor.scrollbar.verticalScrollbarSize": 6
+                },
+                {
+                    "breadcrumbs.enabled": true,
+                    "editor.bracketPairColorization.enabled": true,
+                    "editor.foldingHighlight": true,
+                    "editor.guides.indentation": true,
+                    "editor.lineNumbers": "on",
+                    "editor.minimap.autohide": "none",
+                    "editor.renderControlCharacters": true,
+                    "editor.renderIndentGuides": true,
+                    "editor.renderWhitespace": "all",
+                    "editor.scrollbar.horizontalScrollbarSize": 12,
+                    "editor.scrollbar.verticalScrollbarSize": 12
+                }
+            ]
+        }
+    ],
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.stickyScroll.enabled": false,
     "workbench.colorTheme": "GitHub Light Default",
+    "workbench.editor.highlightModifiedTabs": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.list.smoothScrolling": true,
     "workbench.productIconTheme": "Default",
     "workbench.tree.enableStickyScroll": true,
+    "workbench.tree.renderIndentGuides": "none"
 }
