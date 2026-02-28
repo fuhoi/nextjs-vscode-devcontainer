@@ -1,4 +1,10 @@
 {
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": ".github/copilot-commit-message-instructions.md"
+        }
+    ],
     "breadcrumbs.enabled": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.cursorSmoothCaretAnimation": "on",
