@@ -31,7 +31,8 @@
                 // Code Editing
                 "EditorConfig.EditorConfig" /* EditorConfig for VS Code: EditorConfig helps maintain consistent coding styles between different editors and IDEs. It allows you to define and enforce coding styles in a project by using a .editorconfig file. */,
                 // Web Development
-                "bradlc.vscode-tailwindcss"
+                "bradlc.vscode-tailwindcss" /* Tailwind CSS IntelliSense: A Visual Studio Code extension that provides intelligent code completion, syntax highlighting, and linting for Tailwind CSS. It helps developers work with Tailwind CSS more efficiently by offering suggestions and error checking as they write their styles. */,
+                "MermaidChart.vscode-mermaid-chart" /* Mermaid Chart: A Visual Studio Code extension that provides support for Mermaid diagrams, allowing you to create and visualize flowcharts, sequence diagrams, class diagrams, and more directly within your code editor. */
             ]
         }
     },

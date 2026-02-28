@@ -1,0 +1,26 @@
+sequenceDiagram
+    autonumber
+    participant User
+    participant Frontend as React App (Web SDK)
+    participant Backend as API Service (Node/Go/Java)
+    participant DB as Database
+
+    User->>Frontend: Clicks "Confirm Order"
+    Note over Frontend: Start root span: "click" [9]
+    Frontend->>Frontend: Start active span: "order.checkout" [10]
+
+    Frontend->>Backend: HTTP POST /api/checkout
+    Note right of Frontend: Injects "traceparent" header [13, 14]<br/>(TraceID: A, SpanID: B)
+
+    Note over Backend: Extracts TraceID: A [14, 25]
+    Backend->>Backend: Start child span: "POST /api/checkout" [24]
+    Note right of Backend: Parent ID is B
+
+    Backend->>DB: INSERT order
+    Note over DB: Database span created [27]
+
+    DB-->>Backend: Success
+    Backend-->>Frontend: HTTP 201 Created
+
+    Note over Frontend: End spans and export full trace [26, 28]
+    Note over Frontend: Send via sendBeacon on exit [22]
