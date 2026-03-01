@@ -111,5 +111,8 @@
     "workbench.list.smoothScrolling": true,
     "workbench.productIconTheme": "Default",
     "workbench.tree.enableStickyScroll": true,
-    "workbench.tree.renderIndentGuides": "none"
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreviewFromCodeNavigation": false,
+    "workbench.editor.enablePreview": false
 }
