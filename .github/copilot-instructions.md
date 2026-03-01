@@ -18,7 +18,7 @@ This repository is a minimal Next.js 13+ application scaffolded with `create-nex
   INSTRUMENTATION_PLAN.md   - high-level design notes for a custom telemetry library
 ```
 
-Beyond the above there are only a few config files (ESLint, Tailwind, etc.). The root also contains `.agents` for Copilot skills but those are unrelated to runtime.
+Beyond the above there are only a few config files (ESLint, Tailwind, etc.). The root also contains `.agents` for Copilot skills (unrelated to runtime) and a new `.agent-storage` directory used by autonomous agents to keep track of their roadmap and progress.
 
 ## 🚀 Common Workflows
 
@@ -63,6 +63,11 @@ There are no tests configured; if you add them, update the instructions accordin
 - Use React hooks and context extensively; the plan explicitly names hooks like `useInstrumentation`/`usePageSpan`.
 - When editing `next.config.ts` or adding new configuration, maintain TypeScript typing as shown in the existing file.
 - Components are function components exported as defaults when they represent pages; named exports for utilities/helpers.
+
+### Agent Storage & Roadmap
+- Agents should consult `.agent-storage/roadmap.md` to discover planned features.
+- Each roadmap entry gets a directory (`.agent-storage/<feature>/`) with its own `plan.md`.
+- Agents must keep these files up to date and may reference `.github/copilot-agent-storage.md` for guidelines.
 
 ### External Integrations
 - There are no backend APIs defined in this repo. If instrumentation code references endpoints, assume they will be specified via configuration loaded at runtime (see `config.ts` in the plan).
