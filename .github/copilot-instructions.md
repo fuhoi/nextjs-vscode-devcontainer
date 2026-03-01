@@ -2,6 +2,13 @@
 
 This repository is a minimal Next.js 13+ application scaffolded with `create-next-app` using the **app router** and **Tailwind CSS**. Most of the interesting work happens under `my-app/`.
 
+## Agent Storage & Roadmap
+- Agents MUST READ `.agent-storage/roadmap.md` to discover planned features.
+- Each roadmap entry gets a directory (`.agent-storage/<feature>/`) with its own `plan.md`.
+- Agents MUST KEEP these files up to date and may reference `.github/copilot-agent-storage.md` for guidelines.
+- Agents must not begin work on a feature until they have created or read `plan.md`.
+- Agents must not begin work on a feature until they have read the corresponding `plan.md` and understand the goals and tasks.
+
 ## 📁 Project Layout
 
 ```
@@ -63,11 +70,6 @@ There are no tests configured; if you add them, update the instructions accordin
 - Use React hooks and context extensively; the plan explicitly names hooks like `useInstrumentation`/`usePageSpan`.
 - When editing `next.config.ts` or adding new configuration, maintain TypeScript typing as shown in the existing file.
 - Components are function components exported as defaults when they represent pages; named exports for utilities/helpers.
-
-### Agent Storage & Roadmap
-- Agents should consult `.agent-storage/roadmap.md` to discover planned features.
-- Each roadmap entry gets a directory (`.agent-storage/<feature>/`) with its own `plan.md`.
-- Agents must keep these files up to date and may reference `.github/copilot-agent-storage.md` for guidelines.
 
 ### External Integrations
 - There are no backend APIs defined in this repo. If instrumentation code references endpoints, assume they will be specified via configuration loaded at runtime (see `config.ts` in the plan).
